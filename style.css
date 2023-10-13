@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 300;
+    color: gray;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo {
+/* color: #fff; */
+font-weight: bold;
+font-size: 2em;
+text-decoration: none;
+}
+
+.logo span{
+     color: #036600; 
+   
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+}
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+     color: #036600; 
+    text-decoration : none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.btn-reserve {
+    padding: 10px 20px;
+    background-color: #fcfcfb;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+.btn-reserve:hover {
+    background-color: #f9f8f7;
+    transition: ease-out;
+    
+}
+
+header .navbar li a:hover {
+    color: rgb(1, 1, 1);
+    border-bottom: 2px solid #1c3527;;
+}
+.baniere {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(./img/c21.jpg) ;
+    background-size: cover;
+    animation: animateBackground 35s infinite linear;
+}
+
+.baniere .contenu {
+    max-width: 70%;
+    text-align: center;
+}
+
+.baniere .contenu h2 {
+    color: #036600;
+    font-size: 3em;
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: 0px;
+    word-spacing: 3.2px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: capitalize;
+    animation: slideRight 10s forwards;
+}
+@keyframes slideRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(1);
+    }
+}
+
+.contenu p:nth-child(2) {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 100px;
+}
+ 
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50 {
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.row .col50 h2 {
+    margin-bottom: 20px;
+}
+
+.titre-texte {
+    color: black;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+.titre-texte span {
+    color: #036600;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+.row .col50 img {
+    width: 600px;
+    position: relative;
+}
+
+.titre {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.evenement {
+    margin-top: -100px;
+}
+
+.evenement .contenu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.evenement .contenu .box {
+    width: 310px;
+    margin: 20px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px #1c3527;
+
+}
+
+.evenement .contenu .box .imbox {
+    position: relative;
+    width: 100%;
+    height: 310px;
+}
+
+.evenement .contenu .box .imbox img {
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+
+}
+
+.evenement .contenu .box .text {
+    text-align: center;
+    font-weight: 290px;
+    color: #111;
+}
+
+.evenement .contenu .box .text h3{
+    font-weight: 400;
+}
+.temoignage {
+    background-image:url(img/c2.jpeg) ;
+    background-size: cover;
+    
+}
+
+.temoignage .contenu {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.temoignage .contenu .box {
+    width: 200px;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.temoignage .contenu .box .imbox {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.temoignage .contenu .box .imbox img {
+    position: relative;
+    width: 100%;
+    height: 100px ;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+.temoignage .contenu .box  .text {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+.temoignage .contenu .box .text h3 {
+    color: #036600;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.blanc .titre-texte {
+    color: #fff;
+}
+
+.blanc .titre-texte, .blanc p{
+    
+}
