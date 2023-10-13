@@ -227,6 +227,7 @@ section {
     align-items: center;
     flex-direction: column;
     border-radius: 15px;
+    padding: 20px;
 }
 
 .temoignage .contenu .box .imbox {
@@ -265,5 +266,5 @@ section {
 }
 
 .blanc .titre-texte, .blanc p{
-    
+    color: #0b0b0b;
 }
